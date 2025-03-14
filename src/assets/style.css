@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+main {
+  padding-top: 40px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.row {
+  display: flex;
+  padding: 20px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: 20px;
+}
+
+picture {
+  display: block;
+  font-size: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  /* padding: 10px; */
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.title-3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.dropdown {
+  height: 40px;
+}
+
+.dropdown li {
+  height: 40px;
+}
+
+.category-card .wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bfe5bf;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+.category-card {
+  width: 50%;
+  padding: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .row .col {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .row .col {
+    width: 100%;
+  }
+
+  .row .category-card {
+    width: 50%;
+  }
+
+  .category-card .wrapper {
+    height: 100px;
+  }
+
+  .info-col button,
+  .checkout button {
+    position: fixed;
+    bottom: 0;
+    padding: 20px 50px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  footer {
+    padding-bottom: 55px;
+  }
+}
