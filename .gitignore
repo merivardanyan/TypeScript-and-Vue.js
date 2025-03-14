@@ -1,0 +1,30 @@
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+# .vite
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite
+.vite/
+
+# npm package-lock file
+package-lock.json
+
+# Yarn lock file
+yarn.lock
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
